@@ -1,0 +1,3286 @@
+body {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333333;
+}
+
+.portal-title-1 {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+#header-master.sticky {
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+#header-master.sticky #header-bg {
+    transition: height 2s;
+    overflow: hidden;
+    max-height: 0;
+    height: 0;
+    min-height: 0;
+}
+
+#header-master {
+    margin-bottom: 15px;
+    padding-top: 20px;
+    background: #F1F1F1;
+    padding-bottom: 15px;
+}
+
+#header-master.inner {
+    -webkit-box-shadow: 0 3px 5px 0 rgba(201, 201, 201, 1);
+    -moz-box-shadow: 0 3px 5px 0 rgba(201, 201, 201, 1);
+    box-shadow: 0 3px 5px 0 rgba(201, 201, 201, 1);
+    padding-bottom: 15px;
+}
+
+#header-master.sticky + main {
+    padding-top: 200px;
+}
+
+#header-master #logo {
+    float: left;
+    width: 100%;
+}
+
+#header-master #logo a {
+    color: #333;
+}
+
+#header-master #logo a img {
+    float: left;
+    margin: 0 15px 15px 0;
+    max-width: 120px;
+    max-height: 76px;
+}
+
+#header-master #logo a:hover {
+    text-decoration: none;
+}
+
+#header-master #logo a span {
+    text-transform: uppercase;
+}
+
+#header-master #logo a h1 {
+    font-size: .85em;
+    display: block;
+    height: 21px;
+    margin: 0;
+}
+
+#header-master #logo .portal-title-1 {
+    font-size: .85em;
+    display: block;
+    height: 21px;
+    padding-top: 2em;
+}
+
+#header-master #logo .portal-description {
+    position: relative;
+    font-size: 1.3em;
+    line-height: .8em;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 5px;
+    padding-right: 0px;
+    text-transform: inherit;
+}
+
+#header-master #header-bar .header-right ul {
+    float: right;
+}
+
+#header-master #header-bar .header-right ul li {
+    padding: 0 5px 0 5px;
+}
+
+#header-master #header-bar .header-right ul#portal-siteactions li {
+    padding: 0 15px 0 15px;
+}
+
+#header-master #header-bar .header-right ul li a {
+    color: #000;
+    font-size: .73em;
+    text-transform: uppercase;
+}
+
+#header-master #header-bar .header-right {
+    text-align: right;
+}
+
+.hide,
+.hidden {
+    display: none;
+}
+
+#header-master #header-bar .header-right ul#portal-siteactions li {
+    border-left: 1px solid #838383;
+}
+
+#header-master #header-bar .header-right ul#portal-siteactions li:first-child {
+    border-left: none;
+}
+
+#header-bar {
+    position: relative;
+    z-index: 99;
+    height: auto;
+}
+
+#header-bg {
+    background: #F1F1F1;
+    min-height: 200px;
+    z-index: 50;
+    overflow: hidden;
+    position: relative;
+}
+
+#header-bg img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#header-master #header-bar #menu-bar .bar {
+    border-top: 1px solid #838383;
+    border-bottom: 1px solid #838383;
+    padding: 5px 0;
+}
+
+#header-master.inner #header-bar #menu-bar .bar {
+    border-bottom: none;
+}
+
+#header-master #header-bar #menu-bar .bar .navbar.first {
+    padding: 0;
+}
+
+#header-master #header-bar #menu-bar .bar .navbar.first button.navbar-brand {
+    border: none;
+    background: transparent;
+    padding: 0;
+    outline: 0 !important;
+}
+
+#header-master #header-bar #menu-bar .bar .navbar.first button.navbar-brand .bar1,
+#header-master #header-bar #menu-bar .bar .navbar.first button.navbar-brand .bar2,
+#header-master #header-bar #menu-bar .bar .navbar.first button.navbar-brand .bar3 {
+    width: 20px;
+    height: 3px;
+    background-color: #1E61CC;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+#header-master #header-bar #menu-bar .bar .navbar.first button.navbar-brand.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+#header-master #header-bar #menu-bar .bar .navbar.first button.navbar-brand.change .bar2 {
+    opacity: 0;
+}
+
+#header-master #header-bar #menu-bar .bar .navbar.first button.navbar-brand.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-7px, -4px);
+}
+
+#header-master #header-bar #menu-bar .bar a {
+    color: #000;
+    text-align: center;
+}
+
+#header-master #header-bar #menu-bar .bar a:hover {
+    color: #686868;
+}
+
+#header-master #nav-principal {
+    background: #FFF;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    -webkit-box-shadow: 0 3px 5px 0 rgba(201, 201, 201, 1);
+    -moz-box-shadow: 0 3px 5px 0 rgba(201, 201, 201, 1);
+    box-shadow: 0 3px 5px 0 rgba(201, 201, 201, 1);
+}
+
+#header-master #nav-principal .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+
+#header-master #nav-principal .container nav {
+    min-width: 200px;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    flex: 1;
+}
+
+#header-master #nav-principal .container nav h2 {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#header-master #nav-principal .container nav ul li {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#header-master #header-bar #menu-bar {
+    margin-top: 20px;
+}
+
+#header-master #header-bar #menu-bar .search-input {
+    text-align: right;
+}
+
+#header-master #header-bar #menu-bar .search-input input {
+    width: 100%;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    padding-right: 40px;
+}
+
+#header-master #header-bar #menu-bar .search-input button {
+    height: 36px;
+    margin-top: -37px;
+    -webkit-border-top-right-radius: 50px;
+    -webkit-border-bottom-right-radius: 50px;
+    -moz-border-radius-topright: 50px;
+    -moz-border-radius-bottomright: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    float: right;
+    color: #1E61CC;
+}
+
+header #language li .language-en {
+    background: url(../img/flag-en.gif) 0 center no-repeat;
+    padding-left: 15px;
+}
+
+header #language li .language-pt {
+    background: url(../img/flag-pt.gif) 0 center no-repeat;
+    padding-left: 15px;
+}
+
+header #language li .language-es {
+    background: url(../img/flag-es.gif) 0 center no-repeat;
+    padding-left: 15px;
+}
+
+main {
+    margin-top: 25px;
+}
+
+#breadcrumb {
+    border-bottom: 1px solid #838383;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+#breadcrumb a,
+#breadcrumb span {
+    padding: 0 5px;
+    color: #515151;
+}
+
+#breadcrumb .separator {
+    color: #838383;
+}
+
+main .container-page {
+    margin-top: 50px;
+    padding: 0 100px;
+    padding-bottom: 3em;
+}
+
+main .container-page .title {
+    border-bottom: 1px solid #838383;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+main .container-page .page-info {
+    border-bottom: 1px solid #838383;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 12px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+main .container-page .page-info ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+main .container-page .subtitle {
+    border-bottom: 1px solid #838383;
+    font-size: 14px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+main .container-page h1,
+main .container-page h2,
+main .container-page h3,
+main .container-page h4,
+main .container-page h5,
+main .container-page h6 {
+    border-bottom: 1px solid #838383;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+main .container-page .social {
+    margin-top: 25px;
+    text-align: right;
+}
+
+main .container-page .social div {
+    float: right;
+    margin-left: 10px;
+}
+
+main .container-page .body {
+    border-bottom: 1px solid #838383;
+    font-size: 14px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+main .container-page .img {
+    text-align: center;
+    margin-top: 25px;
+}
+
+main .container-page .img .caption-top,
+main .container-page .img .image-alt {
+    font-size: 10px;
+}
+
+main .container-page .back-top {
+    border-bottom: 1px solid #838383;
+    border-top: 1px solid #838383;
+    text-align: right;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333333;
+}
+
+main .container-page .back-top a {
+    color: #333333;
+}
+
+main .container-page .back-top a i {
+    font-size: 16px;
+}
+
+footer {
+    background: #F1F1F1;
+    padding-top: 25px;
+}
+
+footer .footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+
+footer .footer-menu nav {
+    min-width: 200px;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    flex: 1;
+}
+
+footer .footer-menu nav h2 {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+footer .footer-menu nav ul li {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+footer .footer-menu nav ul li a {
+    color: #333;
+}
+
+footer .footer-logos {
+    text-align: right;
+}
+
+footer .footer-logos img {
+    max-width: 100px;
+    margin-left: 25px;
+}
+
+.container-page .list .item-list {
+    border-bottom: 3px solid #838383;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.container-page .list .item-list .tileimage {
+    overflow: hidden;
+}
+
+.container-page .list .item-list .tileimage img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.container-page .list .item-list .tiletext .subtitle {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.container-page .list .item-list .tiletext h2 {
+    font-size: 16px;
+    text-align: left;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.container-page .list .item-list .highlight {
+    background: yellow;
+}
+
+.list-pagination {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.list-pagination nav {
+    margin-top: 10px;
+    text-align: center;
+}
+
+main .container-page .search-container {
+    margin-top: 25px;
+    border-bottom: 1px solid #838383;
+    padding-bottom: 15px;
+}
+
+main .container-page .search-total {
+    margin-top: 25px;
+    border-bottom: 1px solid #838383;
+    padding-bottom: 15px;
+}
+
+main .container-page .search-results {
+    margin-top: 25px;
+    border-bottom: 1px solid #838383;
+    padding-bottom: 15px;
+}
+
+.boxligh {
+    background: #FFF;
+}
+
+.boxdark {
+    background: #F1F1F1;
+}
+
+.item-box {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.item-box.full {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.item-box .outstanding-header .outstanding-title {
+    text-align: center;
+    padding-top: 25px;
+    font-weight: 800;
+    padding-bottom: 25px
+}
+
+.item-box .bannergroup.full {
+    margin-bottom: 0;
+}
+
+.item-box .bannergroup {
+    margin-bottom: 35px;
+}
+
+.item-box .bannergroup .container {
+    display: flex;
+}
+
+.item-box .bannergroup .container .banneritem {
+    flex: 1;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.item-box .bannergroup .banneritem img {
+    width: 100%
+}
+
+
+/* Noticias Lastest */
+
+.rss-snif {
+    margin-bottom: 20px;
+}
+
+.link-noticia-latest a {
+    color: #1351b4;
+}
+
+.link-noticia-latest h4 {
+    font-weight: 800;
+    color: #1351b4;
+}
+
+.data-noticia {
+    margin-bottom: 10px;
+}
+
+.mais-noticias {
+    margin-top: 20px;
+}
+
+.button-mais {
+    border: 1px solid #000000;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 80px;
+    border-radius: 41px;
+    font-weight: 600;
+    float: none;
+    margin-top: 36px;
+}
+
+.button-mais:hover {
+    text-decoration: none;
+    background: #1351b4;
+    border-color: #1351b4;
+    color: #fff;
+}
+
+
+/* Correção de alinhamento e espaçamento no sp_poll */
+
+div.mod-sppoll form.form-sppoll.form-inline div.col-md-12 {
+    text-align: center;
+    padding: 30px;
+}
+
+div.mod-sppoll form.form-sppoll.form-inline div.col-md-12.text-center {
+    margin-top: 5px !important;
+    padding-bottom: 11px;
+    padding-top: 6px;
+}
+
+
+/*Formatacao Estatisticas Florestais*/
+
+body.pagina-estatisticas-florestais div.layout main div.container div.row-fluid div.item-box.module ul.menu,
+body.pagina-bioma-cerrado div.layout main div.container div.row-fluid div.item-box.module ul.menu {
+    display: flow-root;
+    padding-bottom: 4em;
+}
+
+.pagina-estatisticas-florestais .legenda,
+body.pagina-bioma-cerrado .pagina-estatisticas-florestais {
+    text-align: left;
+    font-size: 0.8em !important;
+    padding: 6px 0 8px 0px;
+    border-bottom: 1px solid #ddd;
+    width: 92%;
+    margin-left: 20px !important;
+}
+
+.pagina-estatisticas-florestais .legenda div,
+body.pagina-bioma-cerrado .pagina-estatisticas-florestais .legenda div {
+    position: relative;
+}
+
+.pagina-estatisticas-florestais .legenda div span,
+body.pagina-bioma-cerrado .pagina-estatisticas-florestais .legenda div span {
+    width: 80%;
+    display: block;
+    padding: 0 0 0px 23px;
+    line-height: 1.2;
+}
+
+.pagina-estatisticas-florestais .internas .module,
+body.pagina-bioma-cerrado .pagina-estatisticas-florestais .internas .module {
+    padding-bottom: 10px !important;
+}
+
+.pagina-estatisticas-florestais li.deeper i,
+.pagina-estatisticas-florestais .legenda i,
+body.pagina-bioma-cerrado li.deeper i,
+body.pagina-bioma-cerrado .legenda i {
+    font-size: 2em;
+    color: #5eab2f;
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: -7px;
+    z-index: 10;
+}
+
+.pagina-estatisticas-florestais li.parent,
+body.pagina-bioma-cerrado li.parent {
+    float: left;
+    width: 16%;
+    background: #eaeaea;
+    padding: 5px 8px;
+    margin: 25px 11px 5px -4px;
+    min-height: 86px;
+    position: relative;
+    border-radius: 0 0 25px 0;
+}
+
+.pagina-estatisticas-florestais ul li.parent > a,
+body.pagina-bioma-cerrado ul li.parent > a {
+    color: #333;
+    position: absolute;
+    line-height: 1.2;
+    height: 100%;
+    border-bottom: 1px solid #ccc;
+    top: 0;
+    padding: 23px 9px 0 19px;
+    left: 0;
+    text-align: left;
+    border-radius: 0 0 25px 0;
+    width: 100%;
+}
+
+.pagina-estatisticas-florestais ul > li.parent > a:hover,
+body.pagina-bioma-cerrado ul > li.parent > a:hover {
+    background: #d3d3d3
+}
+
+.pagina-estatisticas-florestais li.deeper ul,
+body.pagina-bioma-cerrado li.deeper ul {
+    position: absolute;
+    bottom: -24px;
+    left: -19px;
+}
+
+.pagina-estatisticas-florestais li.parent ul li:hover,
+body.pagina-bioma-cerrado li.parent ul li:hover {
+    text-decoration: underline !important;
+}
+
+.pagina-estatisticas-florestais li.deeper ul li,
+.pagina-estatisticas-florestais li.deeper,
+body.pagina-bioma-cerrado li.deeper ul li,
+body.pagina-bioma-cerrado li.deeper {
+    list-style: none !important;
+}
+
+.pagina-estatisticas-florestais li i.verde,
+.legenda i.verde,
+body.pagina-bioma-cerrado li i.verde,
+body.pagina-bioma-cerrado .legenda i.verde {
+    color: #5eab2f !important;
+}
+
+.pagina-estatisticas-florestais li i.marrom,
+.legenda i.marrom,
+body.pagina-bioma-cerrado li i.marrom,
+body.pagina-bioma-cerrado .legenda i.marrom {
+    color: #c59b65 !important;
+}
+
+.pagina-estatisticas-florestais li i.roxo,
+.legenda i.roxo,
+body.pagina-bioma-cerrado li i.roxo,
+body.pagina-bioma-cerrado .legenda i.roxo {
+    color: #b57ac7 !important;
+}
+
+.pagina-estatisticas-florestais li i.vermelho,
+.legenda i.vermelho,
+body.pagina-bioma-cerrado li i.vermelho,
+body.pagina-bioma-cerrado .legenda i.vermelho {
+    color: #ef6666 !important;
+}
+
+
+/* Alterando a cor do icone RSS */
+
+.fas.fa-rss {
+    color: orange;
+}
+
+
+/* Correções SFBPush */
+
+ul.unstyled {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+ul.unstyled li {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    box-sizing: border-box;
+    height: 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+ul.unstyled li:nth-child(odd) {
+    clear: both;
+    float: left;
+    width: 7%;
+}
+
+
+/* Correções Mapa do site */
+
+h1.documentFirstHeading {
+    margin-top: 50px;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: .6em;
+    order: -5;
+    font-family: Raleway, sans-serif;
+    font-weight: 900;
+    color: #333;
+    line-height: normal;
+    letter-spacing: normal;
+    border: none;
+}
+
+.documentDescription {
+    color: #a6a6a6;
+    font: normal 1.125rem Raleway, sans-serif;
+    text-align: center;
+    margin: 0 auto 2rem;
+    order: -4;
+}
+
+.navTreeLevel2,
+.navTreeLevel2 ul {
+    font-size: 85%;
+    font-weight: normal;
+    margin-bottom: 0;
+    padding: 0.25em 0;
+    list-style-type: disc;
+    line-height: 1.5em;
+    margin-left: 2.7em;
+    padding-bottom: 2.7em;
+}
+
+.navTreeLevel2 li {
+    list-style-type: disc;
+    font-size: 16px;
+    margin-bottom: 0.25em;
+    display: list-item;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.75;
+    letter-spacing: normal;
+}
+
+body.pagina-mapa-do-site h2.outstanding-title {
+    color: #222 !important;
+    list-style: none;
+    font-size: 130%;
+    font-weight: bold;
+}
+
+
+/* Tableau campos pesonalizados */
+
+.pull-right.col-md-3.dados-complementares {
+    float: right;
+    margin: 12px 0 0 0;
+    min-width: max-content;
+}
+
+ul.pull-right.span3.dados-complementares {
+    margin: 12px 0 0 0;
+    min-width: max-content;
+}
+
+ul.pull-right.span3.dados-complementares li {
+    list-style: none !important;
+}
+
+ul.pull-right.col-md-3.dados-complementares li {
+    list-style: none !important;
+}
+
+ul.pull-right.span3.dados-complementares i {
+    font-size: 1.4em;
+    color: #00773c;
+}
+
+ul.pull-right.col-md-3.dados-complementares i {
+    font-size: 1.4em;
+    color: #00773c;
+}
+
+.row-fluid.\#dados-complementares {
+    padding-bottom: 1em;
+}
+
+.pull-right.col-md-3.dados-complementares {
+    padding-top: 2em;
+}
+
+.social {
+    display: none;
+}
+
+.subtitulo-blog {
+    font-size: 18px;
+}
+
+
+/* Template lista de categorias*/
+
+body.pagina-titulocat div.item-list {
+    border-bottom: transparent !important;
+    padding: 12px 0 8px 0 !important;
+    margin-top: 0 !important;
+}
+
+body.pagina-titulocat .subtitle {
+    border-bottom: transparent !important;
+}
+
+body.pagina-titulocat div.tiletext.col-md-12 h2.tileHeadline a {
+    color: #000 !important;
+}
+
+
+/* Correções no banner header-bg */
+
+body.pagina-home div.layout div#header-bg.container-fluid div.row a div.col-md-12 {
+    width: 53em;
+    float: right;;
+    margin-top: 3em;
+    text-align: justify;
+    padding-right: 1em;
+    margin-right: 38px;
+}
+
+body.pagina-home div.layout a div.col-md-12 div.container h2 {
+    font-size: 1.6rem;
+}
+
+body.pagina-home div.layout div#header-bg.container-fluid div.row a div.col-md-12 div.container p {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+body.pagina-home div.layout div#header-bg.container-fluid {
+    width: 100%;
+    height: 350px;
+    margin-top: -15px;
+}
+
+
+/* Push */
+
+#tabsPush {
+    margin-bottom: 50px;
+}
+
+#jform_nome-error,
+#jform_email-error,
+#jform_id_perfil-error,
+#jform_senha-error {
+    width: 100%;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+#btn-cadastro {
+    margin-bottom: 2em;
+}
+
+
+/* Correção no banner full-img das páginas de destaque*/
+
+#banner-full-img {
+    max-height: 400px;
+    width: 100%;
+}
+
+
+/* Correção dos estilos das tabelas */
+
+table {
+    border-collapse: collapse;
+    border-top: 1px solid #e8e7e7;
+    border-left: 1px solid #e8e7e7;
+    margin: 10px;
+}
+
+thead {
+    background-color: #ececec !important;
+    color: #00500f !important;
+}
+
+table,
+th,
+td {
+    border-right: 1px solid #e8e7e7;
+    border-bottom: 1px solid #e8e7e7;
+    padding: 5px 10px;
+    vertical-align: top;
+}
+
+
+/* Banner Full -  Bioma cerrado */
+
+body.pagina-bioma-cerrado #breadcrumb a,
+body.pagina-bioma-cerrado #breadcrumb span {
+    color: #FBFBFB;
+}
+
+body.pagina-bioma-cerrado #breadcrumb {
+    border-bottom: 1px solid #FBFBFB;
+}
+
+body.pagina-bioma-cerrado div#banner-full-img img {
+    object-fit: cover;
+}
+
+
+/* Eixos temáticos do SNIF */
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-header {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card-verde {
+    background-color: #7BAE6B;
+}
+
+.card-vermelho {
+    background-color: #B77679;
+}
+
+.card-marrom {
+    background-color: #B28453;
+}
+
+.card-roxo {
+    background-color: #848CBA;
+}
+
+.icon-eixo {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+}
+
+.newsflash-image img {
+    max-height: 300px
+}
+
+.newsflash-title {
+    font-weight: bold;
+}
+
+.newsflash-title a {
+    color: #3E67E3;
+}
+
+.newsflash-title a:hover {
+    color: #0056b3;
+}
+
+
+/* Imagem-alt */
+
+.image-box {
+    background: #f1f1f1;
+    margin: 5px 11px 0px 0;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+div.image-box a.jcepopup div.image-alt {
+    margin-top: 233px;
+    color: #333;
+    padding-bottom: 1px;
+    margin-bottom: 0px;
+}
+
+div.image-box div.image-alt {
+    margin-top: 195px;
+    color: #333;
+    padding-bottom: 1px;
+    margin-bottom: 0px;
+}
+
+
+/* Modelo sem tablu*/
+
+div.container-page.blog.tableau div.list div.item-list div.row div.tiletext.col-md-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+div.container-page.blog div.list div.item-list div.row div.tiletext.col-md-9 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+
+/* Rede Social */
+
+.portal-redes {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.h3-redes {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color: #222;
+}
+
+.coluna-redes {
+    width: 100% !important;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+    padding-top: 20px;
+}
+
+.coluna-redes ul i {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 25px;
+}
+
+.fab.fa-youtube {
+    color: #C80500;
+}
+
+.fab.fa-twitter {
+    color: #009DE3;
+}
+
+.fab.fa-soundcloud {
+    color: #FC3C00;
+}
+
+.fab.fa-instagram {
+    color: #205585;
+}
+
+.fab.fa-facebook {
+    color: #3C5395;
+}
+
+.fab.fa-flickr {
+    color: #FF007C;
+}
+
+.lateralquote,
+blockquote {
+    border-bottom: 1px solid #b9b9b9;
+    border-top: 1px solid #b9b9b9;
+    color: #464646;
+    font-size: 1.1em !important;
+    line-height: 1em;
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+    padding: 6px 0 !important;
+    margin-bottom: 10px !important;
+    font-weight: 800;
+}
+
+
+/* Correção caption table */
+
+caption {
+    caption-side: top !important;
+    text-align: left;
+    font-size: 1em !important;
+    font-weight: 600 !important;
+}
+
+@media screen {
+    /* Correção layout dos formulários */
+    .bfQuickMode .bfSubmitButton {
+        float: left !important;
+        margin-left: 43em !important;
+        margin-top: 1em !important;
+    }
+
+    .bfQuickMode .bfLabelLeft label {
+        width: 8% !important;
+        float: left !important;
+        margin: 0 !important;
+        margin-bottom: .5rem !important;
+    }
+
+    .bfQuickMode section input[type="text"], .bfQuickMode section textarea, .bfQuickMode section select {
+        float: left !important;
+        margin: 0px !important;
+        width: 52% !important;
+    }
+
+    body.pagina-form.lacunas .bfQuickMode .bfLabelLeft label {
+        width: 28% !important;
+        float: left !important;
+        margin: 0 !important;
+        margin-bottom: 0px;
+        margin-bottom: .5rem !important;
+    }
+
+    body.pagina-form.lacunas .bfQuickMode .bfSubmitButton {
+        float: left !important;
+        margin-left: 59em !important;
+        margin-top: 1em !important;
+    }
+
+    body.pagina-form.classificados .bfQuickMode .bfLabelLeft label {
+        width: 25% !important;
+        float: left !important;
+        margin: 0 !important;
+        margin-bottom: 0px;
+        margin-bottom: .5rem !important;
+    }
+  
+	body.pagina-form.classificados .bfQuickMode section input[type="text"], body.pagina-form.classificados .bfQuickMode section textarea, body.pagina-form.classificados .bfQuickMode section select {
+        float: left !important;
+		margin: 0px !important;
+		width: 63.7% !important;
+    }
+
+    body.pagina-form.classificados .bfQuickMode .bfSubmitButton {
+        float: left !important;
+        margin-left: 53em !important;
+        margin-top: 1em !important;
+    }
+
+    body.pagina-form.colabore .bfQuickMode .bfLabelLeft label {
+        width: 22% !important;
+        float: left !important;
+        margin: 0 !important;
+        margin-bottom: 0px;
+        margin-bottom: .5rem !important;
+    }
+
+    body.pagina-form.colabore .bfQuickMode .bfSubmitButton {
+        float: left !important;
+        margin-left: 54.4em !important;
+        margin-top: 1em !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #header-master #logo a img {
+        margin: 0 124px 7px 0 !important;
+        position: relative !important;
+        left: 26%;
+    }
+
+    #header-master #logo a h1 {
+        margin-top: 60px !important;
+        text-align: center !important;
+        font-size: 0.77em;
+        height: auto;
+    }
+
+    #header-master #logo .portal-description {
+        margin-top: 10px !important;
+        margin-left: 0px !important;
+        text-align: center !important;
+        line-height: 2.5em;
+        font-size: 1.2em;
+    }
+
+    body.pagina-home #header-info-article .container {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+
+    #header-bg img {
+        width: 100%;
+    }
+
+    body.pagina-home #header-info-article .container h1 {
+        font-size: 1.4em;
+    }
+
+    body.pagina-home #header-info-article .container p {
+        font-weight: inherit !important;
+        text-align: justify;
+    }
+
+    body.pagina-home #menu-bar.col-md-12 div.bar div.row div.col-md-8.col-sm-12 {
+        width: 0;
+    }
+
+    body.pagina-home #menu-bar.col-md-12 div.bar div.row div.col-md-4.col-sm-12.search-input {
+        width: 90%;
+    }
+
+    div#header-bar.container div.row div.col-md-6.header-right {
+        padding: 0;
+    }
+
+    .button-mais {
+        width: 100%;
+    }
+
+    .item-box .bannergroup .container {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 {
+        width: 100% !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div {
+        width: 100%;
+        height: 220px !important;
+        padding: 0 !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div div {
+        height: 267px;
+        left: 0 !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div div div#YoutubeGallerySecondaryContainer2 {
+        height: 239px;
+        width: 100% !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div div div#YoutubeGallerySecondaryContainer2 iframe#ygplayerapiid_2api {
+        width: 100%;
+        height: 219px;
+    }
+
+    #YoutubeGalleryMainContainer2 > div:nth-child(1) > div:nth-child(2) {
+        right: -150px !important;
+        display: none !important;
+        right: 0 !important;
+    }
+
+    #YoutubeGalleryMainContainer2 > div:nth-child(1) > div:nth-child(1) {
+        left: -131px !important;
+        left: 0 !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid.video-inicio div {
+        width: 100% !important;
+    }
+
+    main .container-page,
+    body.pagina-ultimas-noticias .custom {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    #language {
+        margin-top: 19px;
+        padding-right: 103px;
+    }
+
+    body.pagina-home div.layout div#header-bg.container-fluid div.row a div.col-md-12 {
+        width: 81%;
+        float: right;
+    }
+
+    body.pagina-home div.layout div#header-bg.container-fluid div.row a div.col-md-12 {
+        margin-top: 2em;
+    }
+
+    body.pagina-home div.layout main div.item-box.module div.outstanding-header h2.outstanding-title {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 1.4em;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
+        height: 228px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(1) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(3) {
+        top: 145px !important;
+        left: 117px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(1) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(4) {
+        top: 217px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home span.align-items-end:nth-child(3) {
+        top: 127px !important;
+        left: 98px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+        height: 210px !important;
+    }
+
+    body.pagina-home span.align-items-end:nth-child(4) {
+        top: 200px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(3) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(3) {
+        top: 126px !important;
+        left: 128px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(3) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(4) {
+        top: 194px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+        height: 197px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(4) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(4) {
+        top: 193px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(4) > div:nth-child(1) > div:nth-child(2) {
+        height: 202px !important;
+    }
+
+    body.pagina-home form.form-sppoll.form-inline .custom-control-inline {
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        margin-right: 1rem;
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        padding-left: 8em;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(4) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(3) {
+        top: 118px !important;
+        left: 132px !important;
+    }
+
+    #banner-full-img {
+        max-height: 400px;
+        width: 100%;
+        height: 247px !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container-fluid div.row div.container {
+        height: 104px;
+        margin-top: -117px !important;
+        padding: 0 100px;
+        padding-left: 32px !important;
+        padding-right: 32px !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container-fluid div.row div.container h1 {
+        font-size: 1.6em !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container-fluid div.row div.container p {
+        font-size: 0.9em !important;
+    }
+
+    .legenda {
+        text-align: left;
+        font-size: 0.8em !important;
+        padding: 6px 0 8px 0px;
+        border-bottom: 1px solid transparent !important;
+        width: 89% !important;
+        margin-left: 20px !important;
+    }
+
+    .legenda div {
+        position: relative;
+        display: flex !important;
+        flex: 1 !important;
+        flex-direction: column !important;
+        max-width: 100% !important;
+    }
+
+    body.pagina-bioma-cerrado i.fas.fa-leaf,
+    .pagina-estatisticas-florestais i.fas.fa-leaf {
+        margin-top: 4px !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container div.row-fluid div.item-box.module ul.menu,
+    .pagina-estatisticas-florestais div.layout main div.container div.row-fluid div.item-box.module ul.menu {
+        display: flex !important;
+        flex: 1 !important;
+        flex-direction: column !important;
+    }
+
+    .pagina-estatisticas-florestais li.parent,
+    body.pagina-bioma-cerrado li.parent {
+        width: 88% !important;
+        margin-bottom: 23px;
+    }
+
+    .pagina-estatisticas-florestais .legenda div span, body.pagina-bioma-cerrado .pagina-estatisticas-florestais .legenda div span {
+        margin-bottom: 13px;
+    }
+
+    .bfQuickMode .bfSubmitButton,
+    body.pagina-form.classificados .bfQuickMode .bfSubmitButton,
+    body.pagina-form.colabore .bfQuickMode .bfSubmitButton,
+    body.pagina-form.lacunas .bfQuickMode .bfSubmitButton {
+        float: left !important;
+        margin-left: 0.4rem !important;
+        margin-top: 1em !important;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 360px) {
+    #header-master #logo a img {
+        margin: 0 124px 7px 0 !important;
+        position: relative !important;
+        left: 26%;
+    }
+
+    #header-master #logo a h1 {
+        margin-top: 60px !important;
+        text-align: center !important;
+        font-size: 0.77em;
+        height: auto;
+    }
+
+    #header-master #logo .portal-description {
+        margin-top: 10px !important;
+        margin-left: 0px !important;
+        text-align: center !important;
+        line-height: 2.5em;
+        font-size: 1.2em;
+    }
+
+    body.pagina-home #header-info-article .container {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+
+    #header-bg img {
+        width: 100%;
+    }
+
+    body.pagina-home #header-info-article .container h1 {
+        font-size: 1.4em;
+    }
+
+    body.pagina-home #header-info-article .container p {
+        font-weight: inherit !important;
+        text-align: justify;
+    }
+
+    body.pagina-home #menu-bar.col-md-12 div.bar div.row div.col-md-8.col-sm-12 {
+        width: 0;
+    }
+
+    body.pagina-home #menu-bar.col-md-12 div.bar div.row div.col-md-4.col-sm-12.search-input {
+        width: 90%;
+    }
+
+    div#header-bar.container div.row div.col-md-6.header-right {
+        padding: 0;
+    }
+
+    .button-mais {
+        width: 100%;
+    }
+
+    .item-box .bannergroup .container {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 {
+        width: 100% !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div {
+        width: 100%;
+        height: 220px !important;
+        padding: 0 !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div div {
+        height: 267px;
+        left: 0 !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div div div#YoutubeGallerySecondaryContainer2 {
+        height: 239px;
+        width: 100% !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div div div#YoutubeGallerySecondaryContainer2 iframe#ygplayerapiid_2api {
+        width: 100%;
+        height: 219px;
+    }
+
+    #YoutubeGalleryMainContainer2 > div:nth-child(1) > div:nth-child(2) {
+        right: -150px !important;
+        display: none !important;
+        right: 0 !important;
+    }
+
+    #YoutubeGalleryMainContainer2 > div:nth-child(1) > div:nth-child(1) {
+        left: -131px !important;
+        left: 0 !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid.video-inicio div {
+        width: 100% !important;
+    }
+
+    main .container-page,
+    body.pagina-ultimas-noticias .custom {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    #language {
+        margin-top: 19px;
+        padding-right: 103px;
+    }
+
+    body.pagina-home div.layout div#header-bg.container-fluid div.row a div.col-md-12 {
+        width: 81%;
+        float: right;
+    }
+
+    body.pagina-home div.layout div#header-bg.container-fluid div.row a div.col-md-12 {
+        margin-top: 2em;
+    }
+
+    body.pagina-home div.layout main div.item-box.module div.outstanding-header h2.outstanding-title {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 1.4em;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
+        height: 228px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(1) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(3) {
+        top: 145px !important;
+        left: 117px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(1) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(4) {
+        top: 217px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home span.align-items-end:nth-child(3) {
+        top: 127px !important;
+        left: 98px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+        height: 210px !important;
+    }
+
+    body.pagina-home span.align-items-end:nth-child(4) {
+        top: 200px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(3) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(3) {
+        top: 126px !important;
+        left: 128px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(3) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(4) {
+        top: 194px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+        height: 197px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(4) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(4) {
+        top: 193px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(4) > div:nth-child(1) > div:nth-child(2) {
+        height: 202px !important;
+    }
+
+    body.pagina-home form.form-sppoll.form-inline .custom-control-inline {
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        margin-right: 1rem;
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        padding-left: 8em;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(4) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(3) {
+        top: 118px !important;
+        left: 132px !important;
+    }
+
+    #banner-full-img {
+        max-height: 400px;
+        width: 100%;
+        height: 247px !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container-fluid div.row div.container {
+        height: 104px;
+        margin-top: -117px !important;
+        padding: 0 100px;
+        padding-left: 32px !important;
+        padding-right: 32px !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container-fluid div.row div.container h1 {
+        font-size: 1.6em !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container-fluid div.row div.container p {
+        font-size: 0.9em !important;
+    }
+
+    .legenda {
+        text-align: left;
+        font-size: 0.8em !important;
+        padding: 6px 0 8px 0px;
+        border-bottom: 1px solid transparent !important;
+        width: 89% !important;
+        margin-left: 20px !important;
+    }
+
+    .legenda div {
+        position: relative;
+        display: flex !important;
+        flex: 1 !important;
+        flex-direction: column !important;
+        max-width: 100% !important;
+    }
+
+    body.pagina-bioma-cerrado i.fas.fa-leaf,
+    .pagina-estatisticas-florestais i.fas.fa-leaf {
+        margin-top: 4px !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container div.row-fluid div.item-box.module ul.menu,
+    .pagina-estatisticas-florestais div.layout main div.container div.row-fluid div.item-box.module ul.menu {
+        display: flex !important;
+        flex: 1 !important;
+        flex-direction: column !important;
+    }
+
+    .pagina-estatisticas-florestais li.parent,
+    body.pagina-bioma-cerrado li.parent {
+        width: 88% !important;
+        margin-bottom: 23px;
+    }
+
+    .pagina-estatisticas-florestais .legenda div span, body.pagina-bioma-cerrado .pagina-estatisticas-florestais .legenda div span {
+        margin-bottom: 13px;
+    }
+
+    .bfQuickMode .bfSubmitButton,
+    body.pagina-form.classificados .bfQuickMode .bfSubmitButton,
+    body.pagina-form.colabore .bfQuickMode .bfSubmitButton,
+    body.pagina-form.lacunas .bfQuickMode .bfSubmitButton {
+        float: left !important;
+        margin-left: 0.4rem !important;
+        margin-top: 1em !important;
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 375px) {
+    #header-master #logo a img {
+        margin: 0 124px 7px 0 !important;
+        position: relative !important;
+        left: 26%;
+    }
+
+    #header-master #logo a h1 {
+        margin-top: 60px !important;
+        text-align: center !important;
+        font-size: 0.77em;
+        height: auto;
+    }
+
+    #header-master #logo .portal-description {
+        margin-top: 10px !important;
+        margin-left: 0px !important;
+        text-align: center !important;
+        line-height: 2.5em;
+        font-size: 1.2em;
+    }
+
+    body.pagina-home #header-info-article .container {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+
+    #header-bg img {
+        width: 100%;
+    }
+
+    body.pagina-home #header-info-article .container h1 {
+        font-size: 1.4em;
+    }
+
+    body.pagina-home #header-info-article .container p {
+        font-weight: inherit !important;
+        text-align: justify;
+    }
+
+    body.pagina-home #menu-bar.col-md-12 div.bar div.row div.col-md-8.col-sm-12 {
+        width: 0;
+    }
+
+    body.pagina-home #menu-bar.col-md-12 div.bar div.row div.col-md-4.col-sm-12.search-input {
+        width: 90%;
+    }
+
+    div#header-bar.container div.row div.col-md-6.header-right {
+        padding: 0;
+    }
+
+    .button-mais {
+        width: 100%;
+    }
+
+    .item-box .bannergroup .container {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 {
+        width: 100% !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div {
+        width: 100%;
+        height: 220px !important;
+        padding: 0 !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div div {
+        height: 267px;
+        left: 0 !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div div div#YoutubeGallerySecondaryContainer2 {
+        height: 239px;
+        width: 100% !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div div div#YoutubeGallerySecondaryContainer2 iframe#ygplayerapiid_2api {
+        width: 100%;
+        height: 219px;
+    }
+
+    #YoutubeGalleryMainContainer2 > div:nth-child(1) > div:nth-child(2) {
+        right: -150px !important;
+        display: none !important;
+        right: 0 !important;
+    }
+
+    #YoutubeGalleryMainContainer2 > div:nth-child(1) > div:nth-child(1) {
+        left: -131px !important;
+        left: 0 !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid.video-inicio div {
+        width: 100% !important;
+    }
+
+    main .container-page,
+    body.pagina-ultimas-noticias .custom {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    #language {
+        margin-top: 19px;
+        padding-right: 102px;
+    }
+
+    body.pagina-home div.layout div#header-bg.container-fluid div.row a div.col-md-12 {
+        width: 81%;
+        float: right;
+    }
+
+    body.pagina-home div.layout div#header-bg.container-fluid div.row a div.col-md-12 {
+        margin-top: 2em;
+    }
+
+    body.pagina-home div.layout main div.item-box.module div.outstanding-header h2.outstanding-title {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 1.4em;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
+        height: 228px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(1) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(3) {
+        top: 145px !important;
+        left: 117px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(1) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(4) {
+        top: 217px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home span.align-items-end:nth-child(3) {
+        top: 127px !important;
+        left: 98px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+        height: 210px !important;
+    }
+
+    body.pagina-home span.align-items-end:nth-child(4) {
+        top: 200px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(3) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(3) {
+        top: 126px !important;
+        left: 128px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(3) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(4) {
+        top: 194px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+        height: 197px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(4) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(4) {
+        top: 193px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(4) > div:nth-child(1) > div:nth-child(2) {
+        height: 202px !important;
+    }
+
+    body.pagina-home form.form-sppoll.form-inline .custom-control-inline {
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        margin-right: 1rem;
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        padding-left: 8em;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(4) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(3) {
+        top: 118px !important;
+        left: 132px !important;
+    }
+
+    #banner-full-img {
+        max-height: 400px;
+        width: 100%;
+        height: 247px !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container-fluid div.row div.container {
+        height: 104px;
+        margin-top: -117px !important;
+        padding: 0 100px;
+        padding-left: 32px !important;
+        padding-right: 32px !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container-fluid div.row div.container h1 {
+        font-size: 1.6em !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container-fluid div.row div.container p {
+        font-size: 0.9em !important;
+    }
+
+    .legenda {
+        text-align: left;
+        font-size: 0.8em !important;
+        padding: 6px 0 8px 0px;
+        border-bottom: 1px solid transparent !important;
+        width: 89% !important;
+        margin-left: 20px !important;
+    }
+
+    .legenda div {
+        position: relative;
+        display: flex !important;
+        flex: 1 !important;
+        flex-direction: column !important;
+        max-width: 100% !important;
+    }
+
+    body.pagina-bioma-cerrado i.fas.fa-leaf,
+    .pagina-estatisticas-florestais i.fas.fa-leaf {
+        margin-top: 4px !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container div.row-fluid div.item-box.module ul.menu,
+    .pagina-estatisticas-florestais div.layout main div.container div.row-fluid div.item-box.module ul.menu {
+        display: flex !important;
+        flex: 1 !important;
+        flex-direction: column !important;
+    }
+
+    .pagina-estatisticas-florestais li.parent,
+    body.pagina-bioma-cerrado li.parent {
+        width: 88% !important;
+        margin-bottom: 23px;
+    }
+
+    .pagina-estatisticas-florestais .legenda div span, body.pagina-bioma-cerrado .pagina-estatisticas-florestais .legenda div span {
+        margin-bottom: 13px;
+    }
+
+    .bfQuickMode .bfSubmitButton,
+    body.pagina-form.classificados .bfQuickMode .bfSubmitButton,
+    body.pagina-form.colabore .bfQuickMode .bfSubmitButton,
+    body.pagina-form.lacunas .bfQuickMode .bfSubmitButton {
+        float: left !important;
+        margin-left: 0.4rem !important;
+        margin-top: 1em !important;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 384px) {
+    #header-master #logo a img {
+        margin: 0 124px 7px 0 !important;
+        position: relative !important;
+        left: 26%;
+    }
+
+    #header-master #logo a h1 {
+        margin-top: 60px !important;
+        text-align: center !important;
+        font-size: 0.77em;
+        height: auto;
+    }
+
+    #header-master #logo .portal-description {
+        margin-top: 10px !important;
+        margin-left: 0px !important;
+        text-align: center !important;
+        line-height: 2.5em;
+        font-size: 1.2em;
+    }
+
+    body.pagina-home #header-info-article .container {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+
+    #header-bg img {
+        width: 100%;
+    }
+
+    body.pagina-home #header-info-article .container h1 {
+        font-size: 1.4em;
+    }
+
+    body.pagina-home #header-info-article .container p {
+        font-weight: inherit !important;
+        text-align: justify;
+    }
+
+    body.pagina-home #menu-bar.col-md-12 div.bar div.row div.col-md-8.col-sm-12 {
+        width: 0;
+    }
+
+    body.pagina-home #menu-bar.col-md-12 div.bar div.row div.col-md-4.col-sm-12.search-input {
+        width: 90%;
+    }
+
+    div#header-bar.container div.row div.col-md-6.header-right {
+        padding: 0;
+    }
+
+    .button-mais {
+        width: 100%;
+    }
+
+    .item-box .bannergroup .container {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 {
+        width: 100% !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div {
+        width: 100%;
+        height: 220px !important;
+        padding: 0 !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div div {
+        height: 267px;
+        left: 0 !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div div div#YoutubeGallerySecondaryContainer2 {
+        height: 239px;
+        width: 100% !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div div div#YoutubeGallerySecondaryContainer2 iframe#ygplayerapiid_2api {
+        width: 100%;
+        height: 219px;
+    }
+
+    #YoutubeGalleryMainContainer2 > div:nth-child(1) > div:nth-child(2) {
+        right: -150px !important;
+        display: none !important;
+        right: 0 !important;
+    }
+
+    #YoutubeGalleryMainContainer2 > div:nth-child(1) > div:nth-child(1) {
+        left: -131px !important;
+        left: 0 !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid.video-inicio div {
+        width: 100% !important;
+    }
+
+    main .container-page,
+    body.pagina-ultimas-noticias .custom {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    #language {
+        margin-top: 19px;
+        padding-right: 102px;
+    }
+
+    body.pagina-home div.layout div#header-bg.container-fluid div.row a div.col-md-12 {
+        width: 81%;
+        float: right;
+    }
+
+    body.pagina-home div.layout div#header-bg.container-fluid div.row a div.col-md-12 {
+        margin-top: 2em;
+    }
+
+    body.pagina-home div.layout main div.item-box.module div.outstanding-header h2.outstanding-title {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 1.4em;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
+        height: 228px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(1) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(3) {
+        top: 145px !important;
+        left: 117px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(1) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(4) {
+        top: 217px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home span.align-items-end:nth-child(3) {
+        top: 127px !important;
+        left: 98px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+        height: 210px !important;
+    }
+
+    body.pagina-home span.align-items-end:nth-child(4) {
+        top: 200px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(3) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(3) {
+        top: 126px !important;
+        left: 128px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(3) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(4) {
+        top: 194px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+        height: 197px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(4) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(4) {
+        top: 193px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(4) > div:nth-child(1) > div:nth-child(2) {
+        height: 202px !important;
+    }
+
+    body.pagina-home form.form-sppoll.form-inline .custom-control-inline {
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        margin-right: 1rem;
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        padding-left: 8em;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(4) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(3) {
+        top: 118px !important;
+        left: 132px !important;
+    }
+
+    #banner-full-img {
+        max-height: 400px;
+        width: 100%;
+        height: 247px !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container-fluid div.row div.container {
+        height: 104px;
+        margin-top: -117px !important;
+        padding: 0 100px;
+        padding-left: 32px !important;
+        padding-right: 32px !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container-fluid div.row div.container h1 {
+        font-size: 1.6em !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container-fluid div.row div.container p {
+        font-size: 0.9em !important;
+    }
+
+    .legenda {
+        text-align: left;
+        font-size: 0.8em !important;
+        padding: 6px 0 8px 0px;
+        border-bottom: 1px solid transparent !important;
+        width: 89% !important;
+        margin-left: 20px !important;
+    }
+
+    .legenda div {
+        position: relative;
+        display: flex !important;
+        flex: 1 !important;
+        flex-direction: column !important;
+        max-width: 100% !important;
+    }
+
+    body.pagina-bioma-cerrado i.fas.fa-leaf,
+    .pagina-estatisticas-florestais i.fas.fa-leaf {
+        margin-top: 4px !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container div.row-fluid div.item-box.module ul.menu,
+    .pagina-estatisticas-florestais div.layout main div.container div.row-fluid div.item-box.module ul.menu {
+        display: flex !important;
+        flex: 1 !important;
+        flex-direction: column !important;
+    }
+
+    .pagina-estatisticas-florestais li.parent,
+    body.pagina-bioma-cerrado li.parent {
+        width: 88% !important;
+        margin-bottom: 23px;
+    }
+
+    .pagina-estatisticas-florestais .legenda div span, body.pagina-bioma-cerrado .pagina-estatisticas-florestais .legenda div span {
+        margin-bottom: 13px;
+    }
+
+    .bfQuickMode .bfSubmitButton,
+    body.pagina-form.classificados .bfQuickMode .bfSubmitButton,
+    body.pagina-form.colabore .bfQuickMode .bfSubmitButton,
+    body.pagina-form.lacunas .bfQuickMode .bfSubmitButton {
+        float: left !important;
+        margin-left: 0.4rem !important;
+        margin-top: 1em !important;
+    }
+}
+
+@media screen and (min-width: 385px) and (max-width: 412px) {
+    #header-master #logo a img {
+        margin: 0 124px 7px 0 !important;
+        position: relative !important;
+        left: 26%;
+    }
+
+    #header-master #logo a h1 {
+        margin-top: 60px !important;
+        text-align: center !important;
+        font-size: 0.77em;
+        height: auto;
+    }
+
+    #header-master #logo .portal-description {
+        margin-top: 10px !important;
+        margin-left: 0px !important;
+        text-align: center !important;
+        line-height: 2.5em;
+        font-size: 1.2em;
+    }
+
+    body.pagina-home #header-info-article .container {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+
+    #header-bg img {
+        width: 100%;
+    }
+
+    body.pagina-home #header-info-article .container h1 {
+        font-size: 1.4em;
+    }
+
+    body.pagina-home #header-info-article .container p {
+        font-weight: inherit !important;
+        text-align: justify;
+    }
+
+    body.pagina-home #menu-bar.col-md-12 div.bar div.row div.col-md-8.col-sm-12 {
+        width: 0;
+    }
+
+    body.pagina-home #menu-bar.col-md-12 div.bar div.row div.col-md-4.col-sm-12.search-input {
+        width: 90%;
+    }
+
+    div#header-bar.container div.row div.col-md-6.header-right {
+        padding: 0;
+    }
+
+    .button-mais {
+        width: 100%;
+    }
+
+    .item-box .bannergroup .container {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 {
+        width: 100% !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div {
+        width: 100%;
+        height: 220px !important;
+        padding: 0 !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div div {
+        height: 267px;
+        left: 0 !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div div div#YoutubeGallerySecondaryContainer2 {
+        height: 239px;
+        width: 100% !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div div div#YoutubeGallerySecondaryContainer2 iframe#ygplayerapiid_2api {
+        width: 100%;
+        height: 219px;
+    }
+
+    #YoutubeGalleryMainContainer2 > div:nth-child(1) > div:nth-child(2) {
+        right: -150px !important;
+        display: none !important;
+        right: 0 !important;
+    }
+
+    #YoutubeGalleryMainContainer2 > div:nth-child(1) > div:nth-child(1) {
+        left: -131px !important;
+        left: 0 !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid.video-inicio div {
+        width: 100% !important;
+    }
+
+    main .container-page,
+    body.pagina-ultimas-noticias .custom {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    #language {
+        margin-top: 19px;
+        padding-right: 102px;
+    }
+
+    body.pagina-home div.layout div#header-bg.container-fluid div.row a div.col-md-12 {
+        width: 81%;
+        float: right;
+    }
+
+    body.pagina-home div.layout div#header-bg.container-fluid div.row a div.col-md-12 {
+        margin-top: 2em;
+    }
+
+    body.pagina-home div.layout main div.item-box.module div.outstanding-header h2.outstanding-title {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 1.4em;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
+        height: 228px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(1) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(3) {
+        top: 145px !important;
+        left: 117px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(1) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(4) {
+        top: 217px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home span.align-items-end:nth-child(3) {
+        top: 127px !important;
+        left: 98px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+        height: 210px !important;
+    }
+
+    body.pagina-home span.align-items-end:nth-child(4) {
+        top: 200px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(3) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(3) {
+        top: 126px !important;
+        left: 128px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(3) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(4) {
+        top: 194px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+        height: 197px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(4) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(4) {
+        top: 193px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(4) > div:nth-child(1) > div:nth-child(2) {
+        height: 202px !important;
+    }
+
+    body.pagina-home form.form-sppoll.form-inline .custom-control-inline {
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        margin-right: 1rem;
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        padding-left: 8em;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(4) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(3) {
+        top: 118px !important;
+        left: 132px !important;
+    }
+
+    #banner-full-img {
+        max-height: 400px;
+        width: 100%;
+        height: 247px !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container-fluid div.row div.container {
+        height: 104px;
+        margin-top: -117px !important;
+        padding: 0 100px;
+        padding-left: 32px !important;
+        padding-right: 32px !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container-fluid div.row div.container h1 {
+        font-size: 1.6em !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container-fluid div.row div.container p {
+        font-size: 0.9em !important;
+    }
+
+    .legenda {
+        text-align: left;
+        font-size: 0.8em !important;
+        padding: 6px 0 8px 0px;
+        border-bottom: 1px solid transparent !important;
+        width: 89% !important;
+        margin-left: 20px !important;
+    }
+
+    .legenda div {
+        position: relative;
+        display: flex !important;
+        flex: 1 !important;
+        flex-direction: column !important;
+        max-width: 100% !important;
+    }
+
+    body.pagina-bioma-cerrado i.fas.fa-leaf,
+    .pagina-estatisticas-florestais i.fas.fa-leaf {
+        margin-top: 4px !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container div.row-fluid div.item-box.module ul.menu,
+    .pagina-estatisticas-florestais div.layout main div.container div.row-fluid div.item-box.module ul.menu {
+        display: flex !important;
+        flex: 1 !important;
+        flex-direction: column !important;
+    }
+
+    .pagina-estatisticas-florestais li.parent,
+    body.pagina-bioma-cerrado li.parent {
+        width: 88% !important;
+        margin-bottom: 23px;
+    }
+
+    .pagina-estatisticas-florestais .legenda div span, body.pagina-bioma-cerrado .pagina-estatisticas-florestais .legenda div span {
+        margin-bottom: 13px;
+    }
+
+    .bfQuickMode .bfSubmitButton,
+    body.pagina-form.classificados .bfQuickMode .bfSubmitButton,
+    body.pagina-form.colabore .bfQuickMode .bfSubmitButton,
+    body.pagina-form.lacunas .bfQuickMode .bfSubmitButton {
+        float: left !important;
+        margin-left: 0.4rem !important;
+        margin-top: 1em !important;
+    }
+}
+
+@media only screen and (min-width: 413px) and (max-width: 414px) {
+    #header-master #logo a img {
+        margin: 0 124px 7px 0 !important;
+        position: relative !important;
+        left: 26%;
+    }
+
+    #header-master #logo a h1 {
+        margin-top: 60px !important;
+        text-align: center !important;
+        font-size: 0.77em;
+        height: auto;
+    }
+
+    #header-master #logo .portal-description {
+        margin-top: 10px !important;
+        margin-left: 0px !important;
+        text-align: center !important;
+        line-height: 2.5em;
+        font-size: 1.2em;
+    }
+
+    body.pagina-home #header-info-article .container {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+
+    #header-bg img {
+        width: 100%;
+    }
+
+    body.pagina-home #header-info-article .container h1 {
+        font-size: 1.4em;
+    }
+
+    body.pagina-home #header-info-article .container p {
+        font-weight: inherit !important;
+        text-align: justify;
+    }
+
+    body.pagina-home #menu-bar.col-md-12 div.bar div.row div.col-md-8.col-sm-12 {
+        width: 0;
+    }
+
+    body.pagina-home #menu-bar.col-md-12 div.bar div.row div.col-md-4.col-sm-12.search-input {
+        width: 90%;
+    }
+
+    div#header-bar.container div.row div.col-md-6.header-right {
+        padding: 0;
+    }
+
+    .button-mais {
+        width: 100%;
+    }
+
+    .item-box .bannergroup .container {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 {
+        width: 100% !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div {
+        width: 100%;
+        height: 220px !important;
+        padding: 0 !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div div {
+        height: 267px;
+        left: 0 !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div div div#YoutubeGallerySecondaryContainer2 {
+        height: 239px;
+        width: 100% !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div div div#YoutubeGallerySecondaryContainer2 iframe#ygplayerapiid_2api {
+        width: 100%;
+        height: 219px;
+    }
+
+    #YoutubeGalleryMainContainer2 > div:nth-child(1) > div:nth-child(2) {
+        right: -150px !important;
+        display: none !important;
+        right: 0 !important;
+    }
+
+    #YoutubeGalleryMainContainer2 > div:nth-child(1) > div:nth-child(1) {
+        left: -131px !important;
+        left: 0 !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid.video-inicio div {
+        width: 100% !important;
+    }
+
+    main .container-page,
+    body.pagina-ultimas-noticias .custom {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    #language {
+        margin-top: 19px;
+        padding-right: 102px;
+    }
+
+    body.pagina-home div.layout div#header-bg.container-fluid div.row a div.col-md-12 {
+        width: 81%;
+        float: right;
+    }
+
+    body.pagina-home div.layout div#header-bg.container-fluid div.row a div.col-md-12 {
+        margin-top: 2em;
+    }
+
+    body.pagina-home div.layout main div.item-box.module div.outstanding-header h2.outstanding-title {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 1.4em;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
+        height: 228px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(1) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(3) {
+        top: 145px !important;
+        left: 117px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(1) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(4) {
+        top: 217px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home span.align-items-end:nth-child(3) {
+        top: 127px !important;
+        left: 98px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+        height: 210px !important;
+    }
+
+    body.pagina-home span.align-items-end:nth-child(4) {
+        top: 200px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(3) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(3) {
+        top: 126px !important;
+        left: 128px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(3) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(4) {
+        top: 194px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+        height: 197px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(4) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(4) {
+        top: 193px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(4) > div:nth-child(1) > div:nth-child(2) {
+        height: 202px !important;
+    }
+
+    body.pagina-home form.form-sppoll.form-inline .custom-control-inline {
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        margin-right: 1rem;
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        padding-left: 8em;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(4) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(3) {
+        top: 118px !important;
+        left: 132px !important;
+    }
+
+    #banner-full-img {
+        max-height: 400px;
+        width: 100%;
+        height: 247px !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container-fluid div.row div.container {
+        height: 104px;
+        margin-top: -117px !important;
+        padding: 0 100px;
+        padding-left: 32px !important;
+        padding-right: 32px !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container-fluid div.row div.container h1 {
+        font-size: 1.6em !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container-fluid div.row div.container p {
+        font-size: 0.9em !important;
+    }
+
+    .legenda {
+        text-align: left;
+        font-size: 0.8em !important;
+        padding: 6px 0 8px 0px;
+        border-bottom: 1px solid transparent !important;
+        width: 89% !important;
+        margin-left: 20px !important;
+    }
+
+    .legenda div {
+        position: relative;
+        display: flex !important;
+        flex: 1 !important;
+        flex-direction: column !important;
+        max-width: 100% !important;
+    }
+
+    body.pagina-bioma-cerrado i.fas.fa-leaf,
+    .pagina-estatisticas-florestais i.fas.fa-leaf {
+        margin-top: 4px !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container div.row-fluid div.item-box.module ul.menu,
+    .pagina-estatisticas-florestais div.layout main div.container div.row-fluid div.item-box.module ul.menu {
+        display: flex !important;
+        flex: 1 !important;
+        flex-direction: column !important;
+    }
+
+    .pagina-estatisticas-florestais li.parent,
+    body.pagina-bioma-cerrado li.parent {
+        width: 88% !important;
+        margin-bottom: 23px;
+    }
+
+    .pagina-estatisticas-florestais .legenda div span, body.pagina-bioma-cerrado .pagina-estatisticas-florestais .legenda div span {
+        margin-bottom: 13px;
+    }
+
+    .bfQuickMode .bfSubmitButton,
+    body.pagina-form.classificados .bfQuickMode .bfSubmitButton,
+    body.pagina-form.colabore .bfQuickMode .bfSubmitButton,
+    body.pagina-form.lacunas .bfQuickMode .bfSubmitButton {
+        float: left !important;
+        margin-left: 0.4rem !important;
+        margin-top: 1em !important;
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 720px) {
+    #header-master #logo a img {
+        margin: 0 124px 7px 0 !important;
+        position: relative !important;
+        left: 26%;
+    }
+
+    #header-master #logo a h1 {
+        margin-top: 60px !important;
+        text-align: center !important;
+        font-size: 0.77em;
+        height: auto;
+    }
+
+    #header-master #logo .portal-description {
+        margin-top: 10px !important;
+        margin-left: 0px !important;
+        text-align: center !important;
+        line-height: 2.5em;
+        font-size: 1.2em;
+    }
+
+    body.pagina-home #header-info-article .container {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+
+    #header-bg img {
+        width: 100%;
+    }
+
+    body.pagina-home #header-info-article .container h1 {
+        font-size: 1.4em;
+    }
+
+    body.pagina-home #header-info-article .container p {
+        font-weight: inherit !important;
+        text-align: justify;
+    }
+
+    body.pagina-home #menu-bar.col-md-12 div.bar div.row div.col-md-8.col-sm-12 {
+        width: 0;
+    }
+
+    body.pagina-home #menu-bar.col-md-12 div.bar div.row div.col-md-4.col-sm-12.search-input {
+        width: 90%;
+    }
+
+    div#header-bar.container div.row div.col-md-6.header-right {
+        padding: 0;
+    }
+
+    .button-mais {
+        width: 100%;
+    }
+
+    .item-box .bannergroup .container {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 {
+        width: 100% !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div {
+        width: 100%;
+        height: 220px !important;
+        padding: 0 !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div div {
+        height: 267px;
+        left: 0 !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div div div#YoutubeGallerySecondaryContainer2 {
+        height: 239px;
+        width: 100% !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid div div#YoutubeGalleryMainContainer2 div div div#YoutubeGallerySecondaryContainer2 iframe#ygplayerapiid_2api {
+        width: 100%;
+        height: 219px;
+    }
+
+    #YoutubeGalleryMainContainer2 > div:nth-child(1) > div:nth-child(2) {
+        right: -150px !important;
+        display: none !important;
+        right: 0 !important;
+    }
+
+    #YoutubeGalleryMainContainer2 > div:nth-child(1) > div:nth-child(1) {
+        left: -131px !important;
+        left: 0 !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    body.pagina-home div.layout main div.item-box.module.row-fluid.video-inicio div {
+        width: 100% !important;
+    }
+
+    main .container-page,
+    body.pagina-ultimas-noticias .custom {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    #language {
+        margin-top: 19px;
+        padding-right: 102px;
+    }
+
+    body.pagina-home div.layout div#header-bg.container-fluid div.row a div.col-md-12 {
+        width: 81%;
+        float: right;
+    }
+
+    body.pagina-home div.layout div#header-bg.container-fluid div.row a div.col-md-12 {
+        margin-top: 2em;
+    }
+
+    body.pagina-home div.layout main div.item-box.module div.outstanding-header h2.outstanding-title {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 1.4em;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
+        height: 228px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(1) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(3) {
+        top: 145px !important;
+        left: 117px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(1) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(4) {
+        top: 217px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home span.align-items-end:nth-child(3) {
+        top: 127px !important;
+        left: 98px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+        height: 210px !important;
+    }
+
+    body.pagina-home span.align-items-end:nth-child(4) {
+        top: 200px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(3) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(3) {
+        top: 126px !important;
+        left: 128px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(3) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(4) {
+        top: 194px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+        height: 197px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(4) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(4) {
+        top: 193px !important;
+        left: 64px !important;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(4) > div:nth-child(1) > div:nth-child(2) {
+        height: 202px !important;
+    }
+
+    body.pagina-home form.form-sppoll.form-inline .custom-control-inline {
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        margin-right: 1rem;
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        padding-left: 8em;
+    }
+
+    body.pagina-home div.col-md-3:nth-child(4) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(3) {
+        top: 118px !important;
+        left: 132px !important;
+    }
+
+    #banner-full-img {
+        max-height: 400px;
+        width: 100%;
+        height: 247px !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container-fluid div.row div.container {
+        height: 104px;
+        margin-top: -117px !important;
+        padding: 0 100px;
+        padding-left: 32px !important;
+        padding-right: 32px !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container-fluid div.row div.container h1 {
+        font-size: 1.6em !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container-fluid div.row div.container p {
+        font-size: 0.9em !important;
+    }
+
+    .legenda {
+        text-align: left;
+        font-size: 0.8em !important;
+        padding: 6px 0 8px 0px;
+        border-bottom: 1px solid transparent !important;
+        width: 89% !important;
+        margin-left: 20px !important;
+    }
+
+    .legenda div {
+        position: relative;
+        display: flex !important;
+        flex: 1 !important;
+        flex-direction: column !important;
+        max-width: 100% !important;
+    }
+
+    body.pagina-bioma-cerrado i.fas.fa-leaf,
+    .pagina-estatisticas-florestais i.fas.fa-leaf {
+        margin-top: 4px !important;
+    }
+
+    body.pagina-bioma-cerrado div.layout main div.container div.row-fluid div.item-box.module ul.menu,
+    .pagina-estatisticas-florestais div.layout main div.container div.row-fluid div.item-box.module ul.menu {
+        display: flex !important;
+        flex: 1 !important;
+        flex-direction: column !important;
+    }
+
+    .pagina-estatisticas-florestais li.parent,
+    body.pagina-bioma-cerrado li.parent {
+        width: 88% !important;
+        margin-bottom: 23px;
+    }
+
+    .pagina-estatisticas-florestais .legenda div span, body.pagina-bioma-cerrado .pagina-estatisticas-florestais .legenda div span {
+        margin-bottom: 13px;
+    }
+
+    .bfQuickMode .bfSubmitButton,
+    body.pagina-form.classificados .bfQuickMode .bfSubmitButton,
+    body.pagina-form.colabore .bfQuickMode .bfSubmitButton,
+    body.pagina-form.lacunas .bfQuickMode .bfSubmitButton {
+        float: left !important;
+        margin-left: 0.4rem !important;
+        margin-top: 1em !important;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 960px) {
+    .bfQuickMode .bfSubmitButton,
+    body.pagina-form.classificados .bfQuickMode .bfSubmitButton,
+    body.pagina-form.colabore .bfQuickMode .bfSubmitButton,
+    body.pagina-form.lacunas .bfQuickMode .bfSubmitButton {
+        float: left !important;
+        margin-left: 0.4rem !important;
+        margin-top: 1em !important;
+    }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1024px) {
+    .bfQuickMode .bfSubmitButton,
+    body.pagina-form.classificados .bfQuickMode .bfSubmitButton,
+    body.pagina-form.colabore .bfQuickMode .bfSubmitButton,
+    body.pagina-form.lacunas .bfQuickMode .bfSubmitButton {
+        float: left !important;
+        margin-left: 0.4rem !important;
+        margin-top: 1em !important;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1366px) {
+}
+
+@media screen and (min-width: 1367px) and (max-width: 1440px) {
+}
+
+@media screen and (min-width: 1441px) {
+}
+
+/*controla exibicao de lista sanfona*/
+.sanfona h3, h3.sanfona-link {
+    display: block !important;
+    background: url("../img/sanfona_mais.png") no-repeat 10px 4px;
+    padding: 0 0 0 28px !important;
+    text-align: left !important;
+    font-size: 1.3em !important;
+}
+
+.sanfona h3.menos, h3.sanfona-link.menos {
+    display: block !important;
+    background: url("../img/sanfona_menos.png") no-repeat 10px 4px;
+    padding: 0 0 0 28px !important;
+    text-align: left !important;
+    font-size: 1.3em !important;
+}
+
+.sanfona h4, h4.sanfona-link {
+    display: block !important;
+    background: url("../img/sanfona_mais.png") no-repeat 10px 3px;
+    padding: 0 0 0 28px !important;
+    margin: -3px 0 0 -10px !important;
+}
+
+.sanfona h4.menos, h4.menos.sanfona-link {
+    display: block !important;
+    background: url("../img/sanfona_menos.png") no-repeat 10px 3px;
+    padding: 0 0 0 28px !important;
+    margin: -3px 0 0 -10px !important;
+}
+
+#jcemediabox-popup-page h1, #jcemediabox-popup-page h1 a {
+    background: #00773c !important;
+    padding: 11px 0px 10px 16px !important;
+    margin-bottom: 15px;
+    margin-left: -8px;
+    font-size: 1.6em !important;
+    color: #fff;
+  	font-weight: 700;
+}
+
+
+/* Remover marca dos formulários*/
+div.bfClearfix div span {
+    display: none;
+}
+
+div.bfClearfix button#bfSubmitButton.bfSubmitButton.button span, .tlid-translation.translation, .tlid-translation.translation span {
+    display: block;
+}
+
+body.pagina-form.classificados div.container-page.item-pageform.classificados div.body { border-bottom: none !important;}
+
+/* Template notícias internacionais rss */
+
+div.outstanding-footer {
+    text-align: center;
+}
+
+a.outstanding-link {
+    border: 1px solid #c1c1c1;
+    color: #000000;
+    text-align: center;
+    padding: 6px 40px;
+    border-radius: 41px;
+    float: none;
+    margin-top: 36px;
+}
+
+a.outstanding-link:hover {
+    text-decoration: none;
+    background: #1351b4;
+    border-color: #1351b4;
+    color: #fff;
+}
+
+hr.separador-noticias {
+    border-top: solid 1px #000 !important;
+}
+
+.hot-tema-block-img{
+    height: 150px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #333333;
+
+  border-radius: 5px;
+}
+
+a.hot-tema-link{
+    color: #333333;
+    font-weight: 600;
+}
+a.hot-tema-link:hover {
+    text-decoration: none;
+}
+.hot-tema-imagem{
+    height: 150px;
+    width: 255px;
+}
+.hot-tema-legenda{
+    margin-top: 10px;
+  text-align: initial;
+}
+
+.hot-tema-block{
+
+    padding: 15px;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #333333;
+}
+.hot-tema-titulo{
+    font-weight: bold;
+    vertical-align: middle;
+}
